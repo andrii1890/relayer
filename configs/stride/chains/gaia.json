@@ -2,8 +2,8 @@
 "type": "cosmos"
         "value": {
             "key": "wallet"
-            "chain-id: "GAIA"
-            "rpc-addr: "http://gw.acloud.pp.ua:23657"
+            "chain-id": "GAIA"
+            "rpc-addr": "http://gw.acloud.pp.ua:23657"
             "account-prefix": "cosmos"
             "keyring-backend": "test"
             "gas-adjustment": "1.2"
