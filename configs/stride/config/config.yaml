@@ -1,0 +1,56 @@
+global:
+    api-listen-addr: :5183
+    timeout: 3m
+    memo: st.Game#8485
+    light-cache-size: 20
+chains:
+    GAIA:
+        type: cosmos
+        value:
+            key: wallet
+            chain-id: GAIA
+            rpc-addr: http://gw.acloud.pp.ua:23657
+            account-prefix: cosmos
+            keyring-backend: test
+            gas-adjustment: 1.2
+            gas-prices: 0.000uatom
+            gas: 300000
+            debug: false
+            timeout: 20s
+            trusting-period: 8h
+            output-format: json
+            sign-mode: direct
+    STRIDE-TESTNET-2:
+        type: cosmos
+        value:
+            key: wallet
+            chain-id: STRIDE-TESTNET-2
+            rpc-addr: http://kvm3.acloud.pp.ua:16657
+            account-prefix: stride
+            keyring-backend: test
+            gas-adjustment: 1.2
+            gas-prices: 0.000ustrd
+            gas: 300000
+            trusting-period: 8h
+            debug: false
+            timeout: 20s
+            output-format: json
+            sign-mode: direct
+paths:
+    gs:
+        src:
+            chain-id: GAIA
+            client-id: 07-tendermint-0
+            connection-id: connection-0
+        dst:
+            chain-id: STRIDE-TESTNET-2
+            client-id: 07-tendermint-0
+            connection-id: connection-0
+        src-channel-filter:
+            rule: allowlist
+            channel-list:
+                - channel-0
+                - channel-1
+                - channel-2
+                - channel-3
+                - channle-4

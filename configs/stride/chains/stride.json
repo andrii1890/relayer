@@ -1,0 +1,18 @@
+{
+"type": "cosmos"
+        "value": {
+            "key": "wallet"
+            "chain-id": "STRIDE-TESTNET-2"
+            "rpc-addr": "http://kvm3.acloud.pp.ua:16657"
+            "account-prefix": "stride"
+            "keyring-backend": "test"
+            "gas-adjustment": "1.2"
+            "gas-prices": "0.000ustrd"
+            "gas": "300000"
+            "trusting-period": "8h"
+            "debug": "false"
+            "timeout": "20s"
+            "output-format": "json"
+            "sign-mode": "direct"
+  }
+}
